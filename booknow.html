@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Document</title>
+
+    <style>
+        body{
+            width: 100%;
+            background-color:  #e6e6e6;
+        }
+
+        @media screen and (min-width: 600px) {
+
+.header{
+background-color: black;
+color:red;
+width: 100%;
+height: 8.5vw;
+position: fixed;
+top: 0;
+left: 0.5px;
+border-bottom: 2px solid white;
+z-index: 3;
+
+}
+
+
+.header a{
+    
+    color:rgb(192, 179, 179);
+    text-decoration: none;
+    padding: 15px;
+    font-size: 1.55vw;
+
+}
+
+.header a:hover{
+    color:white;
+    background-color: crimson;
+   
+
+    }
+
+            
+            .container{
+                width: 50%;
+                background-color: #ccd9ff;
+                position: absolute;
+                left: 20vw;
+                top: 8.5vw;
+                padding-top: 7vh;
+                padding-left: 8vw;
+                font-size: 2.2vh;
+                border-right: 2px groove#cce6ff;
+                border-left: 2px groove#cce6ff;
+            }
+
+            .container input[type=text]{
+                width: 15vw;
+                height: 2vh;
+                font-size: 1.7vh;
+            }
+
+            .container input[type=email]{
+                width: 25vw;
+                height: 2vh;
+                font-size: 1.7vh;
+
+            }
+
+            .container input[type=number]{
+                width: 17vw;
+                height: 2vh;
+                font-size: 1.7vh;
+
+            }
+
+            .container input[type=date]{
+                width: 13vw;
+                height: 2.6vh;
+                font-size: 1.7vh;
+            }
+
+            .container input[type=time]{
+                width: 13vw;
+                height: 2.6vh;
+                font-size: 1.7vh;
+            }
+
+            
+
+            .container input[placeholder]{
+                font-size: 1.5vh;
+            }
+
+            .container input[type=submit]{
+                width: 13vw;
+                height: 4vh;
+                font-size: 1.7vh;
+                background-color: black;
+                color: white;
+                cursor: pointer;
+
+                
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    
+
+
+    
+    <div class="header">
+        
+        <h3 style="padding-left: 14px; font-size: 1.7vw;">Renthomes.com</h3>
+
+        <div class="navbar">
+        <a href="available.html">Home</a>
+        <a href="contactus.html">Contact us</a>
+        <a href="#home">About us</a>
+        <a href="#home">info</a>
+        <a href="#home">help and feedback</a>
+        <a href="FAQs.html">FAQs </a>
+        <a href="tm&cn.html">Terms & Conditions</a>
+        </div>
+
+
+        <div style=" position: absolute; top:2.5vw; right: 2vw;">
+            <a href="signin.html" style="color:chartreuse;"><div class="material-icons">account_circle</div></a>
+        </div>
+    </div>
+
+<div class="container">
+
+<form action="">
+    
+<div class="info">
+    <label>First name:<span style="color:red;">* </span><input type="text" placeholder="Enter your first name"></label>
+    <label>Last name:<span>* </span><input type="text" placeholder="Enter your last name"></label><br><br>
+    <label>Email:<span>* </span><input type="email" placeholder="please enter your email address"></label><br><br>
+    <label>Phone number:<span>* </span><input type="number" placeholder="Enter your mobile number"></label><br><br>
+    <label>Alternate number: <input type="number" placeholder="Enter your alternate mobile number"></label><br><br><br>
+</div>
+
+<div class="guest-info">
+    <h2>Guests personal info</h2>
+    <label>Total no. of guests (max. 5 guests per room): <input type="number" placeholder="1" min="1" max="5"></label><br><br><br>
+    <label>1<sup>st</sup> Guest name:<input type="text"></label>
+    <label>Age:</label><input type="number" placeholder="0"><br><br>
+    <label for>Gender:</label>
+    <label><input type="radio" name="gender1" value="male">Male</label>
+    <label><input type="radio" name="gender1" value="female">Female</label><br><br>
+
+    <label>2<sup>nd</sup> Guest name:<input type="text"></label>
+    <label>Age:</label><input type="number" placeholder="0"><br><br>
+    <label for>Gender:</label>
+    <label><input type="radio" name="gender2" value="male">Male</label>
+    <label><input type="radio" name="gender2" value="female">Female</label><br><br>
+
+    <label>3<sup>rd</sup> Guest name:<input type="text"></label>
+    <label>Age:</label><input type="number" placeholder="0"><br><br>
+    <label for>Gender:</label>
+    <label><input type="radio" name="gender3" value="male">Male</label>
+    <label><input type="radio" name="gender3" value="female">Female</label><br><br>
+
+    <label>4<sup>th</sup> Guest name:<input type="text"></label>
+    <label>Age:</label><input type="number" placeholder="0"><br><br>
+    <label for>Gender:</label>
+    <label><input type="radio" id="l4" name="gender4" value="male">Male</label>
+    <label><input type="radio" id="l4" name="gender4" value="female">Female</label><br><br>
+
+    <label>5<sup>th</sup> Guest name:<input type="text"></label>
+    <label>Age:</label><input type="number" placeholder="0"><br><br>
+    <label for>Gender:</label>
+    <label><input type="radio" name="gender5" value="male">Male</label>
+    <label><input type="radio" name="gender5" value="female">Female</label><br><br>
+
+</div>
+
+<div class="living-info">
+
+    <h2>living info</h2>
+    <label>Arrival date:<input type="date"></label>
+    <label>Departure date:<input type="date"></label><br><br>
+    <label>Arrival time:<input type="time"></label><br><br>
+    <label>Room no.<input type="number"></label><br><br>
+    
+    <label>Room type</label>
+    <select name="room-type" style="width: 7vw; height: 3vh; font-size: 1.7vh;">
+        <option value="1-BHK">1-BHK</option>
+        <option value="2-BHK">2-BHK</option>
+
+    </select>
+
+</div>
+
+<div class="bank-info">
+    <h2>Bank account info</h2>
+    <label>Bank account name</label>
+    <input type="text"><br><br>
+    <label>Branch name</label>
+    <input type="text"><br><br>
+    <label>IFSC code</label>
+    <input type="text"><br><br>
+    <label>Bank account currency</label>
+    <input type="text"><br><br>
+
+    <label>Account type</label>
+    <select name="acc-type" style="width: 12vw; height: 3vh; font-size: 1.7vh;">
+        <option value="saving-acc">saving account</option>
+        <option value="current-acc">current account</option>
+        <option value="recurring-acc">recurring account</option>
+        <option value="fixed-acc">fixed deposit account</option>
+    </select><br><br>
+
+    <label>Credit card type</label>
+    <input type="text"><br><br>
+    <label>Credit card number</label>
+    <input type="text"><br><br>
+    <label>Card expiry date</label>
+    <input type="text"><br><br><br>
+
+    <input type="submit" value="submit"><br><br><br>
+
+</div>
+
+</form>
+
+</div>
+</body>
+</html>
